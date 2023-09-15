@@ -1,0 +1,92 @@
+/* DECLARO VARIABLES DE LOS COLORES PARA FACILITAR EL TRABAJO Y CREAR UNIFORMIDAD */
+
+:root {
+    --oscuro: #1a1927;
+    --oscuro-ligero: #20222e;
+    --blanco: #fafafa;
+    --blanco-secundario: #aaaaaa;
+    --boton:#00b0ff;
+}
+
+
+/* ELIMINAMOS MARGIN, PADDING Y BORDER QUE TIENE EL NAVEGADOR POR DEFECTO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PASAMOS EL TAMAÑO DE LA FUENTE DEL HTML A MEDIDAS 62.5% PARA TRABAJAR MAS SENCILLO CON MEDIDAS REM */
+
+html {
+    font-size: 62.5%;
+}
+
+/*
+font-family: 'DynaPuff', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+ body {
+    display: flex;
+}
+
+aside {
+    width: 200px;
+    height: 100vh;
+    background-color: var(--oscuro-ligero);
+}
+
+.titulo {
+    color: var(--blanco);
+    margin: 20px 0 20px 15px;
+}
+
+.subtitulo {
+    color: var(--blanco-secundario);
+    margin-bottom: 20px;
+}
+
+.contenedor-nav {
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.contenedor-nav ul {
+    list-style: none;
+}
+
+.contenedor-nav ul li {
+    padding-bottom: 8px
+}
+
+.contenedor-nav ul li img {
+    margin-right: 3px;
+    
+
+}
+
+.contenedor-nav ul li a {
+    text-decoration: none;
+    color: var(--blanco-secundario);
+    font-size: 1rem;
+}
+
+.modulo-texto {
+    margin: 0 0 10px 15px;
+    color: var(--blanco-secundario);
+}
+
+.parrafo-modulo {
+    padding: 15px;
+    line-height: 14px;
+    color: var(--blanco-secundario);
+}
+
+main {
+    background-color: var(--oscuro);
+    width: 100%;
+} 
