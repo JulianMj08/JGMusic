@@ -1,46 +1,131 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./Css/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Libre+Baskerville:wght@400;700&family=Raleway:wght@200;600&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
-        <title>JG MUSIC</title>
-    </head>
-    <body>
-        <aside>
-            <h1 class="titulo">JG MUSIC</h1>
-            <div class="contenedor-nav">
-                <ul>
-                    <li><img src="./assets/iconos/inicio.png" width="16" height="16" alt=""> <a href="#">Inicio</a></li>
-                    <li><img src="./assets/iconos/galeria.png" width="16" height="16" alt=""> <a href="./Views/Galeria.html">Galería</a></li>
-                    <li><img src="./assets/iconos/suscribir.png" width="16" height="16" alt=""> <a href="./Views/Presupuesto.html">Suscribirse</a></li>
-                    <li><img src="./assets/iconos/contacto.png" width="16" height="16" alt=""> <a href="./Views/Contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="contenedor-generos contenedor-nav">
-                <h2 class="subtitulo">Géneros</h2>
-                <ul>
-                    <li><a href="">Salsa</a></li>
-                    <li><a href="">Bachata</a></li>
-                    <li><a href="">Reggaton</a></li>
-                    <li><a href="">Electrónica</a></li>
-                    <li><a href="">Vallenato</a></li>
-                </ul>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Libre+Baskerville:wght@400;700&family=Raleway:wght@200;600&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <title>JG MUSIC</title>
+</head>
+<body>
 
-            <div>
-                <h3 class="modulo-texto">Módulo de texto</h3>
-                <p class="parrafo-modulo">Disfruta de toda la música, estamos trabajando para brindarte la mejor experiencia y para que disfrutes de todo nuestro contenido.</p>
-            </div>
-        </aside>
-        
+    <!-- BARRA LATERAL EN DONDE CREAREMOS LA BARRA DE NAVEGACION  -->
+    <aside>
+        <h1 class="titulo">JG MUSIC</h1>
+        <nav class="contenedor-nav">
+            <ul>
+                <li><img src="./assets/iconos/inicio.png" width="16" height="16" alt=""> <a href="#">Inicio</a></li>
+                <li><img src="./assets/iconos/galeria.png" width="16" height="16" alt=""> <a href="./Views/Galeria.html">Galería</a></li>
+                <li><img src="./assets/iconos/suscribir.png" width="16" height="16" alt=""> <a href="./Views/Presupuesto.html">Suscribirse</a></li>
+                <li><img src="./assets/iconos/contacto.png" width="16" height="16" alt=""> <a href="./Views/Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
 
-        <main>
-            <div>contenedor</div>
-        </main>
-        <script src="./Js/main.js"></script>
-    </body>
-    </html>
+        <!-- CREAMOS UNA LISTA DE GÉNEROS MUSICALES CON ENLACE A SU RESPECTIVO GÉNERO MUSICAL -->
+        <div class="contenedor-generos contenedor-nav">
+            <h2 class="subtitulo">Géneros</h2>
+            <ul>
+                <li><a href="">Salsa</a></li>
+                <li><a href="">Bachata</a></li>
+                <li><a href="">Reggaton</a></li>
+                <li><a href="">Electrónica</a></li>
+                <li><a href="">Vallenato</a></li>
+                <li><a href="">Rock</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTENIDO DE TEXTO PARA EL USUARIO -->
+        <div>
+            <h3 class="modulo-texto">Módulo de texto</h3>
+            <p class="parrafo-modulo">Disfruta de toda la música, estamos trabajando para brindarte la mejor experiencia y para que disfrutes de todo nuestro contenido.</p>
+        </div>
+    </aside>
+    
+    <!-- HACEMOS USO DE LA ETIQUETA MAIN PARA APROVECHAR SU USO SEMÁNTICO, ACA VA TODO EL CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- CREAMOS UN CONTENEDOR PRINCIPAL EN EL QUE SE VAN A UBICAR TODOS LOS GÉNEROS MUSICALES Y ALGUNAS DE LAS ULTIMAS CANCIONES EN REPRODUCCIÓN -->
+        <div class="contenedor-principal">
+
+            <!-- GÉNEROS -->
+            <h2>Géneros</h2>
+                <section class="generos">
+
+                    <div class="contenedor-atras">
+                        <img class="atras" src="./assets/iconos/atras.png" width="40" height="40" alt="">
+                    </div>
+
+                    <div class="contenedor-carrusel">
+                        <div class="carrusel">
+                            <div>
+                                <img id="img-1" src="./assets/img/electronica.jpg" width="260" height="160" alt="">
+                                <h3 class="generos-nombre">Electrónica</h3>
+                            </div>
+                            <div>
+                                <img id="img-2" src="./assets/img/reggaeton.jpg" width="260" height="160" alt="">
+                                <h3 class="generos-nombre">Reggaeton</h3>
+                            </div>
+                            <div>
+                                <img id="img-3" src="./assets/img/bachata.jpg" width="260" height="160" alt="">
+                                <h3 class="generos-nombre">Bachata</h3>
+                            </div>
+                            <div>
+                                <img id="img-4" src="./assets/img/vallenatos.jpg" width="260" height="160" alt="">
+                                <h3 class="generos-nombre">Reggaeton</h3>
+                            </div>
+                            <div>
+                                <img id="img-5" src="./assets/img/salsa.jpg" width="260" height="160" alt="">
+                                <h3 class="generos-nombre">Bachata</h3>
+                            </div>
+                            <div>
+                                <img id="img-6" src="./assets/img/rock.jpg" width="260" height="160" alt="">
+                                <h3 class="generos-nombre">Bachata</h3>
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    
+    
+                    <div class="contenedor-siguiente">
+                        <img class="siguiente" src="./assets/iconos/siguiente.png" width="40" height="40" alt="">
+                    </div>
+    
+                </section>
+            
+            
+
+            <!-- CANCIONES RECIENTES -->
+            <h2>Canciones recientes</h2>
+            <section class="canciones-recientes">
+                <div>
+                    <img src="./assets/img/electronica_cuadro.jpg" width="130" height="100" alt="">
+                    <h4>Nombre Cancion</h4>
+                    <h5>Cantante</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/electronica_cuadro.jpg" width="130" height="100" alt="">
+                    <h4>Nombre Cancion</h4>
+                    <h5>Cantante</h5></div>
+                <div>
+                    <img src="./assets/img/electronica_cuadro.jpg" width="130" height="100" alt="">
+                    <h4>Nombre Cancion</h4>
+                    <h5>Cantante</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/electronica_cuadro.jpg" width="130" height="100" alt="">
+                    <h4>Nombre Cancion</h4>
+                    <h5>Cantante</h5>
+                </div>
+                <div>
+                    <img src="./assets/img/electronica_cuadro.jpg" width="130" height="100" alt="">
+                    <h4>Nombre Cancion</h4>
+                    <h5>Cantante</h5>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./Js/main.js"></script>
+</body>
+</html>

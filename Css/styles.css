@@ -1,5 +1,4 @@
 /* DECLARO VARIABLES DE LOS COLORES PARA FACILITAR EL TRABAJO Y CREAR UNIFORMIDAD */
-
 :root {
     --oscuro: #1a1927;
     --oscuro-ligero: #20222e;
@@ -10,7 +9,6 @@
 
 
 /* ELIMINAMOS MARGIN, PADDING Y BORDER QUE TIENE EL NAVEGADOR POR DEFECTO */
-
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +16,6 @@
 }
 
 /* PASAMOS EL TAMAÑO DE LA FUENTE DEL HTML A MEDIDAS 62.5% PARA TRABAJAR MAS SENCILLO CON MEDIDAS REM */
-
 html {
     font-size: 62.5%;
 }
@@ -30,10 +27,12 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
- body {
+body {
     display: flex;
 }
 
+
+/* ESTILOS AL ASIDE */
 aside {
     width: 200px;
     height: 100vh;
@@ -65,8 +64,6 @@ aside {
 
 .contenedor-nav ul li img {
     margin-right: 3px;
-    
-
 }
 
 .contenedor-nav ul li a {
@@ -86,7 +83,93 @@ aside {
     color: var(--blanco-secundario);
 }
 
+/* ESTILOS AL MAIN */
 main {
     background-color: var(--oscuro);
     width: 100%;
 } 
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+  }
+
+.contenedor-principal h2 {
+    color: var(--blanco);
+    margin: 30px 0 12px 0;
+}
+
+.generos {
+    display: flex; 
+}
+
+.generos div img {
+    border-radius: 10px;
+    margin-left: 18px;
+    -webkit-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75); 
+}
+
+/* CARRUSEL */
+.contenedor-carrusel {
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 900px;
+    transition: transform 3.0s ease-in-out;
+}
+
+.contenedor-atras {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+.atras {
+    border: 0.5px solid var(--oscuro-ligero);
+}  
+
+.contenedor-siguiente {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.siguiente {
+    border: 0.5px solid var(--oscuro-ligero);
+}
+
+.generos-nombre {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 4px;
+}
+
+.canciones-recientes {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 18px;
+}
+
+.canciones-recientes div img {
+    border-radius: 10px;
+}
+
+.canciones-recientes div h4 {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 4px;
+}
+
+.canciones-recientes div h5 {
+    text-align: center;
+    color: var(--blanco-secundario);
+}
