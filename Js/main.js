@@ -87,3 +87,26 @@ function cancionesSalsa() {
 function cancionesRock() {
     listRock.classList.toggle("activo");
 }
+
+// CONEXION POR MEDIO DE AJAX PARA HACER USO DE LOS OBEJTOS JSON
+function cargaDatos() {
+
+    var xhr = new XMLHttpRequest();
+
+    const url = "canciones.json";
+    
+    xhr.open("GET", url, true);
+    
+    xhr.onload = function () {
+        if(xhr.status === 200) {
+            var canciones = JSON.parse(xhr.responseText);
+            console.log(canciones);
+        }else {
+            console.error("Error al cargar las canciones");
+        }
+        
+    }
+    xhr.send();
+}
+
+cargaDatos();

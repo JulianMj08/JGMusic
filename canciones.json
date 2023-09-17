@@ -1,0 +1,170 @@
+[
+    {
+        "id": 1,
+        "nombre": "Amarillo",
+        "artista": "J Balbin",
+        "url": "Amarillo_J_balbin.mpeg"
+    },
+    
+    {
+        "id": 2,
+        "nombre": "Hawuai",
+        "artista": "Maluma",
+        "url": "Hawuai-Maluma.mpeg"
+    },
+
+    {
+        "id": 3,
+        "nombre": "Mix Reggaeton",
+        "artista": "Varios artistas",
+        "url": "Mix_reggaeton_clasico.mpeg"
+    },
+
+    {
+        "id": 4,
+        "nombre": "Otro trago",
+        "artista": "Sech",
+        "url": "Otro_trago_Sech.mpeg"
+    },
+
+    {
+        "id": 5,
+        "nombre": "Dezco ascend",
+        "artista": "Official audio",
+        "url": "Dezco_ascend_official_audio.mpeg"
+    },
+
+    {
+        "id": 6,
+        "nombre": "Electrónica mix",
+        "artista": "Electrónica mix",
+        "url": "La_mejor_electronica_del_mundo.mpeg"
+    },
+
+    {
+        "id": 7,
+        "nombre": "Que paso te asustate",
+        "artista": "Dj Pilin electronic",
+        "url": "Que_paso_te_asustaste_Dj_Pilin.mpeg"
+    },
+
+    {
+        "id": 8,
+        "nombre": "Played a live",
+        "artista": "Safri Duo",
+        "url": "Safri_duo_played_a_live.mpeg"
+    },
+
+    {
+        "id": 9,
+        "nombre": "Eres mía",
+        "artista": "Romeo Santos",
+        "url": "Eres_Mía-Romeo-Santos.mpeg"
+    },
+
+    {
+        "id": 10,
+        "nombre": "Escuchame",
+        "artista": "José Fonseca",
+        "url": "Escúchame_Joseph-Fonseca.mpeg"
+    },
+
+    {
+        "id": 11,
+        "nombre": "La Bachata",
+        "artista": "Manuel Turizo",
+        "url": "La_bachata-Manuel-Turizo.mpeg"
+    },
+
+    {
+        "id": 12,
+        "nombre": "Necio",
+        "artista": "Romeo Santos",
+        "url": "Necio-Romeo_santos.mpeg"
+    },
+
+    {
+        "id": 13,
+        "nombre": "No voy a llorar",
+        "artista": "Los diablitos",
+        "url": "No_voy_a_llorar.mpeg"
+    },
+
+    {
+        "id": 14,
+        "nombre": "No sé pedir perdon",
+        "artista": "Rafael Orozco",
+        "url": "Nose_pedir_perdon.mpeg"
+    },
+
+    {
+        "id": 15,
+        "nombre": "Si no me falla el corazón",
+        "artista": "Los diablitos",
+        "url": "Si_no_me_falla_el_corazon.mpeg"
+    },
+
+    {
+        "id": 16,
+        "nombre": "Tu asencia",
+        "artista": "Pedro Arroyo",
+        "url": "Tu_Ausencia.mpeg"
+    },
+
+    {
+        "id": 17,
+        "nombre": "Cómo te hago entender",
+        "artista": "Roberto Roena",
+        "url": "Como_te_hago_entender.mpeg"
+    },
+
+    {
+        "id": 18,
+        "nombre": "Deseandote",
+        "artista": "Frankie Ruiz",
+        "url": "Deseandote_Frankie_Ruiz.mpeg"
+    },
+
+    {
+        "id": 19,
+        "nombre": "Ni siquiera",
+        "artista": "Antonio Cartagena",
+        "url": "Antonio_Cartagena.mpeg"
+    },
+
+    {
+        "id": 20,
+        "nombre": "Una mirada basto",
+        "artista": "Frankie Ruiz",
+        "url": "Una_mirada_basto-Grupo Niche.mpeg"
+    },
+
+    {
+        "id": 21,
+        "nombre": "ACDC rock N roll",
+        "artista": "ACDC rock N roll",
+        "url": "ACDC_rock_N_roll.mpeg"
+    },
+
+    {
+        "id": 22,
+        "nombre": "LMFAO party rock",
+        "artista": "Anthem ft Lauren Bennett<",
+        "url": "LMFAO_party_rock_Anthem_ft_Lauren_Bennett.mpeg"
+    },
+
+    {
+        "id": 23,
+        "nombre": "Lordi hard rock",
+        "artista": "Hallelujah",
+        "url": "Lordi_hard_rock_hallelujah.mpeg"
+    },
+
+    {
+        "id": 24,
+        "nombre": "Sol y Luna",
+        "artista": "Akash",
+        "url": "Sol_y_luna_Akash.mpeg"
+    }
+
+]
