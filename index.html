@@ -16,23 +16,23 @@
         <h1 class="titulo">JG MUSIC</h1>
         <nav class="contenedor-nav">
             <ul>
-                <li><img src="./assets/iconos/inicio.png" width="16" height="16" alt=""> <a href="#">Inicio</a></li>
-                <li><img src="./assets/iconos/galeria.png" width="16" height="16" alt=""> <a href="./Views/Galeria.html">Galería</a></li>
-                <li><img src="./assets/iconos/suscribir.png" width="16" height="16" alt=""> <a href="./Views/Presupuesto.html">Suscribirse</a></li>
-                <li><img src="./assets/iconos/contacto.png" width="16" height="16" alt=""> <a href="./Views/Contacto.html">Contacto</a></li>
+                <li id="inicio"><img src="./assets/iconos/inicio.png" width="16" height="16" alt=""><a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"a href="#">Inicio</a></li>
+                <li><img src="./assets/iconos/galeria.png" width="16" height="16" alt=""> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" href="./Views/Galeria.html">Galería</a></li>
+                <li><img src="./assets/iconos/suscribir.png" width="16" height="16" alt=""> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"href="./Views/Presupuesto.html">Suscribirse</a></li>
+                <li><img src="./assets/iconos/contacto.png" width="16" height="16" alt=""> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"href="./Views/Contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
         <!-- CREAMOS UNA LISTA DE GÉNEROS MUSICALES CON ENLACE A SU RESPECTIVO GÉNERO MUSICAL -->
-        <div class="contenedor-generos contenedor-nav">
+        <div class="contenedor-generos">
             <h2 class="subtitulo">Géneros</h2>
             <ul>
-                <li><a href="">Salsa</a></li>
-                <li><a href="">Bachata</a></li>
-                <li><a href="">Reggaton</a></li>
-                <li><a href="">Electrónica</a></li>
-                <li><a href="">Vallenato</a></li>
-                <li><a href="">Rock</a></li>
+                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" id="electronica">Electrónica</li>
+                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"id="reggaeton">Reggaeton</li>
+                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"id="bachata">Bachata</li>
+                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"id="vallenato">Vallenato</li>
+                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"id="salsa">Salsa</li>
+                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"id="rock">Rock</li>
             </ul>
         </div>
         <!--<button onclick="cargaDatos()">holaaaaaa</button>-->
@@ -60,7 +60,7 @@
                     <p class="descripcion-genero">La mejor música para escuchar y bailar</p>
                 </div>
             </div>
-            <div onclick="cargaDatos()" class="contenedor-lista-reproduccion">
+            <div class="contenedor-lista-reproduccion">
                 <img class="icono-play" id="id1" src="./assets/iconos/icono-play.png" width="30" height="30" alt="">
                 <p class="nombre-cancion">Amarillo</p>
                 <p class="nombre-artista">J Balvin</p>

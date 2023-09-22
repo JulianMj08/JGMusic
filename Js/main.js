@@ -35,6 +35,17 @@ let cancionVeintiUno = document.querySelector("#id21");
 let cancionVeintiDos = document.querySelector("#id22");
 let cancionVeintiTres = document.querySelector("#id23");
 let cancionVeintiCuatro = document.querySelector("#id24");
+const pagInicio = document.getElementById("inicio");
+const titulo = document.querySelector(".titulo");
+const generoElectronica = document.getElementById("electronica");
+const generoReggaeton = document.getElementById("reggaeton");
+const generoBachata = document.getElementById("bachata");
+const generoVallenato = document.getElementById("vallenato");
+const generoSalsa = document.getElementById("salsa");
+const generoRock = document.getElementById("rock");
+
+
+
 
 
 
@@ -53,6 +64,14 @@ imagenTres.addEventListener('click', cancionesBachata);
 imagenCuatro.addEventListener('click', cancionesVallenato);
 imagenCinco.addEventListener('click', cancionesSalsa);
 imagenSeis.addEventListener('click', cancionesRock);
+pagInicio.addEventListener('click', volverInicio);
+titulo.addEventListener('click', volverInicio);
+generoElectronica.addEventListener('click', cancionesElectronica);
+generoReggaeton.addEventListener('click', cancionesReggaeton);
+generoBachata.addEventListener('click', cancionesBachata);
+generoVallenato.addEventListener('click', cancionesVallenato);
+generoSalsa.addEventListener('click', cancionesSalsa);
+generoRock.addEventListener('click', cancionesRock);
 
 
 
@@ -112,8 +131,18 @@ function cancionesRock() {
     listRock.classList.toggle("activo");
 }
 
+function volverInicio() {
+    listReggaeton.classList.remove("activo");
+    listElectronica.classList.remove("activo");
+    listBachata.classList.remove("activo");
+    listvallenato.classList.remove("activo");
+    listSalsa.classList.remove("activo");
+    listRock.classList.remove("activo");
+}
+
+
 // CONEXION POR MEDIO DE AJAX PARA HACER USO DE LOS OBEJTOS JSON
-function cargaDatos() {
+window.onload = function() {
 
     var xhr = new XMLHttpRequest();
 

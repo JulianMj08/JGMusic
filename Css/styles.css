@@ -79,13 +79,24 @@ aside {
     font-size: 1rem;
 }
 
-.modulo-texto {
+.contenedor-generos {
+    font-size: 1rem;
+    color: var(--blanco-secundario);
+}
+
+.contenedor-generos ul li {
+    padding-bottom: 2px;
     margin: 0 0 10px 15px;
+    list-style: none;
+}
+
+.modulo-texto {
+    margin:  20px 0 10px 15px;
     color: var(--blanco-secundario);
 }
 
 .parrafo-modulo {
-    padding: 15px;
+    padding: 10px 15px;
     line-height: 14px;
     color: var(--blanco-secundario);
 }
