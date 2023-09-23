@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./Css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Libre+Baskerville:wght@400;700&family=Raleway:wght@200;600&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
     <title>JG MUSIC</title>
 </head>
 <body>
@@ -16,10 +16,10 @@
         <h1 class="titulo">JG MUSIC</h1>
         <nav class="contenedor-nav">
             <ul>
-                <li id="inicio"><img src="./assets/iconos/inicio.png" width="16" height="16" alt=""><a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"a href="#">Inicio</a></li>
+                <li id="inicio"><img src="./assets/iconos/inicio.png" width="16" height="16" alt=""><a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" href="#">Inicio</a></li>
                 <li><img src="./assets/iconos/galeria.png" width="16" height="16" alt=""> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" href="./Views/Galeria.html">Galería</a></li>
-                <li><img src="./assets/iconos/suscribir.png" width="16" height="16" alt=""> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"href="./Views/Presupuesto.html">Suscribirse</a></li>
-                <li><img src="./assets/iconos/contacto.png" width="16" height="16" alt=""> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"href="./Views/Contacto.html">Contacto</a></li>
+                <li><img src="./assets/iconos/suscribir.png" width="16" height="16" alt=""> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" href="./Views/Presupuesto.html">Suscribirse</a></li>
+                <li><img src="./assets/iconos/contacto.png" width="16" height="16" alt=""> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" href="./Views/Contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
@@ -28,15 +28,13 @@
             <h2 class="subtitulo">Géneros</h2>
             <ul>
                 <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" id="electronica">Electrónica</li>
-                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"id="reggaeton">Reggaeton</li>
-                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"id="bachata">Bachata</li>
-                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"id="vallenato">Vallenato</li>
-                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"id="salsa">Salsa</li>
-                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'"id="rock">Rock</li>
+                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" id="reggaeton">Reggaeton</li>
+                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" id="bachata">Bachata</li>
+                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" id="vallenato">Vallenato</li>
+                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" id="salsa">Salsa</li>
+                <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" id="rock">Rock</li>
             </ul>
-        </div>
-        <!--<button onclick="cargaDatos()">holaaaaaa</button>-->
-        
+        </div>        
 
         <!-- CONTENIDO DE TEXTO PARA EL USUARIO -->
         <div>
@@ -65,11 +63,6 @@
                 <p class="nombre-cancion">Amarillo</p>
                 <p class="nombre-artista">J Balvin</p>
                 <p class="duracion">2:45</p>
-
-                <audio id="sonido" controls>
-                    <source src="" type="audio/mpeg">
-                    Soporte de audio
-                </audio>
             </div>
             <div class="contenedor-lista-reproduccion">
                 <img class="icono-play" id="id2" src="./assets/iconos/icono-play.png" width="30" height="30" alt="">
@@ -90,6 +83,13 @@
                 <p class="nombre-artista">Sech</p>
                 <p class="duracion">3:50</p>
             </div>
+            <div class="contenedor-audio">
+                <audio id="sonido" controls>
+                    <source src="#" type="audio/mpeg">
+                    Soporte de audio
+                </audio>
+            </div>
+            
         </div>
 
         <!-- LISTA DE REPRODUCCION ELECTRONICA -->
@@ -288,10 +288,12 @@
             <h2>Géneros</h2>
                 <section class="generos">
 
+                    <!-- BOTON ATRAS DEL CARRUSEL -->
                     <div class="contenedor-atras">
                         <img class="atras" src="./assets/iconos/atras.png" width="40" height="40" alt="">
                     </div>
 
+                    <!-- IMAGENES DEL CARRUSEL DE CANCIONES -->
                     <div class="contenedor-carrusel">
                         <div class="carrusel">
                             <div id="img-1">
@@ -321,6 +323,7 @@
                         </div>
                     </div>
 
+                    <!-- BOTON SIGUIENTE DEL CARRUSEL -->
                     <div class="contenedor-siguiente">
                         <img class="siguiente" src="./assets/iconos/siguiente.png" width="40" height="40" alt="">
                     </div>

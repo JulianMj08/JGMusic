@@ -181,7 +181,8 @@ window.onload = function() {
         cancionVeintiDos.addEventListener('click', playPista);
         cancionVeintiTres.addEventListener('click', playPista);
         cancionVeintiCuatro.addEventListener('click', playPista);
-        
+        this.audio.controls.backgrounColor = "#00b0ff";
+
         function playPista() {
             let audio = document.getElementById("sonido");
             let source = audio.querySelector("source");
@@ -248,16 +249,6 @@ window.onload = function() {
 
     xhr.send();
 }
-
-
-    /*var audio = document.getElementById("sonido");
-    var source = audio.querySelector("source");
-    source.src = canciones[0].url;
-    audio.load();/*
-
-
-
-
 
 
  /*function playPista() {

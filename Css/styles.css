@@ -7,7 +7,6 @@
     --boton:#00b0ff;
 }
 
-
 /* ELIMINAMOS MARGIN, PADDING Y BORDER QUE TIENE EL NAVEGADOR POR DEFECTO */
 * {
     margin: 0;
@@ -18,14 +17,12 @@
 /* PASAMOS EL TAMAÑO DE LA FUENTE DEL HTML A MEDIDAS 62.5% PARA TRABAJAR MAS SENCILLO CON MEDIDAS REM */
 html {
     font-size: 62.5%;
+    font-family: 'Lora', serif;
 }
 
-/*
-font-family: 'DynaPuff', cursive;
-font-family: 'Libre Baskerville', serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
+html h2 {
+    font-weight: bold;
+}
 
 body {
     display: flex;
@@ -49,11 +46,13 @@ aside {
 .titulo {
     color: var(--blanco);
     margin: 20px 0 20px 15px;
+    cursor: pointer;
 }
 
 .subtitulo {
     color: var(--blanco-secundario);
-    margin-bottom: 20px;
+    margin: 0 0 20px 15px;
+    font-size: 2rem;
 }
 
 .contenedor-nav {
@@ -90,6 +89,10 @@ aside {
     list-style: none;
 }
 
+#electronica, #reggaeton, #bachata, #vallenato, #salsa, #rock  {
+    cursor: pointer;
+}
+
 .modulo-texto {
     margin:  20px 0 10px 15px;
     color: var(--blanco-secundario);
@@ -118,6 +121,7 @@ main {
 .contenedor-principal h2 {
     color: var(--blanco);
     margin: 30px 0 12px 0;
+    font-size: 2rem;
 }
 
 .generos {
@@ -195,6 +199,7 @@ main {
     color: var(--blanco-secundario);
 }
 
+/* ESTILOS A LAS LISTAS DE REPRODUCCION */
 .contenedor-lista-reproduccion{
     display: flex;
     width: 100%;
@@ -244,10 +249,11 @@ main {
 
 .tipo-musica {
     color: var(--blanco);
+    font-size: 3rem;
 }
 
 .descripcion-genero {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: var(--blanco);
 }
 
@@ -268,6 +274,25 @@ main {
     padding: 16px;
     color: var(--blanco);
 }
+
+.contenedor-audio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+    border-radius: 20px;
+}
+
+audio {
+    width: 600px;
+    -webkit-box-shadow: 7px 10px 19px 0px rgba(0,176,255,1);
+    -moz-box-shadow: 7px 10px 19px 0px rgba(0,176,255,1);
+    box-shadow: 7px 10px 19px 0px rgba(0,176,255,1);
+    border-radius: 40px;
+    border: 3px solid var(--boton);
+}
+
+
 
 
 
